@@ -13,9 +13,9 @@ class DetalhesLivroPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(livro.title,
         style: TextStyle (
-          color: Colors.white
+
         ),),
-        backgroundColor: Colors.red,
+        
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -28,7 +28,7 @@ class DetalhesLivroPage extends StatelessWidget {
                   scale: 1.0,
                   child: Image.network(
                     livro.imageUrl,
-                    height: 100, 
+                    height: 250, 
                     fit: BoxFit.cover, 
                     loadingBuilder: (context, child, progress) {
                       if (progress == null) {
@@ -47,7 +47,6 @@ class DetalhesLivroPage extends StatelessWidget {
               Text(
                 livro.title,
                 style: TextStyle(
-          
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
